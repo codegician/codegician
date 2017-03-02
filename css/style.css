@@ -73,8 +73,7 @@ h2 {
              SIDE PANEL
 ===================================*/
 #side-panel {
-  width: 30%;
-  margin: 0;
+  width: 30%;  margin: 0;
   display: inline-block;
   position: fixed;
 }
