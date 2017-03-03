@@ -105,3 +105,11 @@ padding-top: 78px;
 margin-bottom: 350px;
 position: relative;
 }
+
+
+.backstretch {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
