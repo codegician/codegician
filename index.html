@@ -1,97 +1,102 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Ewart Jackson</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-  </head>
+     <head>
+        <meta charset="utf-8">
+        <title>Ewart Jackson</title>
+        <link rel="stylesheet" type="text/css"     href="css/main.css">
+        <link rel="stylesheet" href="jquery-ui.css" />
+        <script src="jquery.js"></script>
+        <script src="jquery-ui.js"></script>
+     </head>
   <body>
-<div id="side-panel">
+       <div id="side-panel" style="left: 0px">
     <header id="logo">
       <h1><span id="name">Ewart Jackson</span></h1>
-      <h2> Web Developer + Designer</h2>
+      <h4> Web Developer + Designer</h4>
       <p>4790 32nd Ave S, Seattle, WA, 98122</p>
       <p>ewartjackson@icloud.com <a href="www.onlywinnerslive.com">www.onlywinnerslive.com</a></p><!-- remove blue link stlign-->
       <nav>
         <ul>
-          <li>Profile</li>
-          <li>Skills</li>
-          <li>Portfolio</li>
-          <li>Work Experience</li>
-          <li>Training</li>
-          <li>Education</li>
-          <li>Store</li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#work">Work Experience</a></li>
+          <li><a href="#training">Training</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#store">Store</a></li>
         </ul>
       </nav>
     </header>
-  </div><!-- closes side-panel -->
-<div id="main">
- <div class="panel">
-     <div class="box">
-       <img src="./img/">
-     </div>
- </div>
- <div class="panel">
-   <div class="box">
-     <section class="skills">
-       <h2>Skills</h2>
-       <h3>Graphic Design</h3>
-       <h3>HTML & CSS</h3>
-       <h3>Javascript & JQuery</h3>
-       <h3>Project Management</h3>
-     </section>
-   </div>
- </div>
- <div class="panel">
-    <div class="box">
-     <section class="work-experience">
-       <h2>Work Experience</h2>
-       <h3>Creative Director</h3>
-       <h4>OnlyWinnersLive |  NY, NY  |  2012 - Present</h4>
-       <p>Champion for new product development</p>
-       <p>Responsible for the design, art direction and management    of all the company's product lines</p>
-       <p>Design product lines in Photoshop, Illustrator, and    InDesign implemented across all social media, web and    merchandising outlets</p>
-       <p>Maintain authenticity of the brand; shape and guided    creative paths</p>
-       <p>Build and maintain websites and social networking    sites</p>
-       <p>Write press releases and content for websites, print and    other media</p>
-     </section>
-   </div>
- </div>
- <div class="panel">
-   <div class="box">
-     <section class="portfolio">
-     </section>
-   </div>
- </div>
- <div class="panel">
-   <div class="box">
-     <section class="training">
-       <h2>Training</h2>
-       <h3>Codecademy</h3>
-       <p>HTML, CSS & Javascript</p>
-       <h3>CalArts</h3>
-       <p>Graphic Design Specialization</p>
-       <h3>UC San Diego</h3>
-       <p>Interaction Design Specialization</p>
-       <h3>Lynda</h3>
-       <p>Project Management Specialization</p>
-     </section>
-   </div>
- </div>
- <div class="panel">
-   <div class="box">
-     <section class="eductaion">
-       <h2>Education</h2>
-       <h3>Floodgate Academy</h3>
-       <p>Full Stack Software Developer | Present</p>
-       <h3>MIT OpenCourseWare</h3>
-       <p>Electrical Engineering & Computer Science | Present</p>
-     </section>
-   </div>
- </div>
-</div><!-- closes main -->
-<div class="backstretch">
-  <img src="./img/2.jpg" style="width:1300px; heigth:699px;">
-</div>
+       </div><!-- closes side-panel -->
+       <div id="main">
+        <div class="panel">
+            <div class="box">
+              <img src="./img/">
+            </div>
+        </div>
+        <div class="panel">
+          <div class="box">
+            <section id="skills">
+              <h2>Skills</h2>
+              <ul>
+                 <li>Graphic Design</li>
+                 <li>HTML & CSS</li>
+                 <li>Javascript & JQuery</li>
+                 <li>Project Management</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+        <div class="panel">
+           <div class="box">
+            <section id="work">
+              <h2>Work Experience</h2>
+              <p>Creative Director</p>
+              OnlyWinnersLive | NY, NY  | 2012 - Present<br/>
+              Champion for new product development<br/>
+              Responsible for the design, art direction and management of all the company's product lines<br/>
+              Design product lines in Photoshop, Illustrator, and InDesign implemented across all social media, web and merchandising outlets<br/>
+              Maintain authenticity of the brand; shape and guided creative paths<br/>
+              Build and maintain websites and social     networking sites<br/>
+              Write press releases and content for websites, print and other media<br/>
+            </section>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="box">
+            <section id="portfolio">
+            </section>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="box">
+            <section id="training">
+              <h2>Training</h2>
+              <h3>Codecademy</h3>
+              <p>HTML, CSS & Javascript</p>
+              <h3>CalArts</h3>
+              <p>Graphic Design Specialization</p>
+              <h3>UC San Diego</h3>
+              <p>Interaction Design Specialization</p>
+              <h3>Lynda</h3>
+              <p>Project Management Specialization</p>
+            </section>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="box">
+            <section id="eductaion">
+              <h2>Education</h2>
+              <h3>Floodgate Academy</h3>
+              <p>Full Stack Software Developer | Present</p>
+              <h3>MIT OpenCourseWare</h3>
+              <p>Electrical Engineering & Computer Science | Present</p>
+            </section>
+          </div>
+        </div>
+       </div><!-- closes main -->
+       <div class="backstretch">
+         <img src="./img/2.jpg" style="width:1300px;        heigth:699px;">
+       </div>
   </body>
 </html>
