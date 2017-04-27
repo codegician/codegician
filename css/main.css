@@ -82,6 +82,7 @@ p {
   font: 12px/22px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	margin: 10px;
+	font-weight: 300;
 }
 li {
   font: 12px/22px;
@@ -91,16 +92,21 @@ li {
 }
 
 a {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	color: inherit;
 	text-decoration: none;
 	vertical-align: top;
+	cursor: pointer;
 }
 
 /*==================================
              SIDE PANEL
 ===================================*/
-#name{
-	margin-bottom: 10px;
+#sub-head-1{
+	margin-bottom: 22px;
+}
+#sub-head-2 {
+	margin-bottom: 45px;
 }
 #side-panel #logo h4 {
 	font-size: 16px;
@@ -124,8 +130,7 @@ a {
 
 
 #side-panel #nav ul li{
-    line-height: 17px;
-		font-size: 14px;
+		font-size: 13px;
 
 }
 
@@ -133,16 +138,15 @@ a {
 
 #side-panel #nav ul li span {
     width: 28px;
-		height: 18px;
-    margin-left: 10px;
+    margin-left: 15px;
 		padding-bottom: 2px;
     display: inline-block;
-
+    vertical-align: middle;
 }
 
 #side-panel #nav ul .nav_1 span {
   height: 24px;
-	background: url("../img/v-card.svg") right bottom no-repeat;
+	background: url("../img/news.svg") right bottom no-repeat;
 }
 
 #side-panel #nav ul .nav_2 span {
@@ -152,12 +156,12 @@ a {
 
 #side-panel #nav ul .nav_3 span {
   height: 24px;
-	background: url("../img/camera.svg") right bottom no-repeat;
+	background: url("../img/documents.svg") right bottom no-repeat;
 }
 
 #side-panel #nav ul .nav_4 span {
   height: 24px;
-	background: url("../img/circular-graph.svg") right bottom no-repeat;
+	background: url("../img/back-in-time.svg") right bottom no-repeat;
 }
 
 #side-panel #nav ul .nav_5 span {
@@ -172,7 +176,7 @@ a {
 
 #side-panel #nav ul .nav_7 span {
   height: 24px;
-	background: url("../img/documents.svg") right bottom no-repeat;
+	background: url("../img/mail-with-circle.svg") right bottom no-repeat;
 }
 
 #side-panel #nav ul .nav_8 span {
@@ -196,7 +200,7 @@ a {
 }
 
 #pic{
-	margin-top: 70px;
+	margin-top: 82px;
 }
 #main .panel {
   width: 600px;
@@ -221,10 +225,51 @@ text-align: left;
 	line-height: 28px;
 }
 
+#work p {
+		text-align: left;
+		font-size: 14px;
+		letter-spacing: 2px;
+		line-height: 28px;
+	}
+
+	#skills ul li {
+		text-align: left;
+		font-size: 14px;
+		letter-spacing: 2px;
+		line-height: 28px;
+	}
+
+	#education h4 {
+		text-align: left;
+		font-size: 14px;
+		letter-spacing: 2px;
+		line-height: 28px;
+	}
+
+	#education p {
+		text-align: left;
+		font-size: 14px;
+		letter-spacing: 2px;
+		line-height: 28px;
+	}
 .sub {
 	text-align: left;
-	margin-bottom: 20px;
+	margin-bottom: 24px;
 	margin-left: 10px;
+	font-size: 18px;
+}
+
+.jump {
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	font-size: 10px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	background: rgba(0,0,0,0.5) repeat;
+  text-transform: uppercase;
+	box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, .7);
 }
 
 .backstretch {

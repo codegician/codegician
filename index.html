@@ -4,9 +4,19 @@
         <meta charset="utf-8">
         <title>Ewart Jackson</title>
         <link rel="stylesheet" type="text/css"     href="css/main.css">
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="jquery-ui.css" />
         <script src="jquery.js"></script>
         <script src="jquery-ui.js"></script>
+        <script>
+          $(document).ready(function(){
+              $("#side-panel ul li a").click(){
+                
+              }
+          });
+
+
+        </script>
      </head>
 
   <body>
@@ -20,13 +30,14 @@
                   <br/>
                   <br/>
                   I am self-taught in Adobe Photoshop, Illustrator, Xd and InDesign, and I am actively expanding and cultivating my creative masteries by obtaining credentials in the field of Graphic and Interaction Design. Along with mastering graphic and interaction design, I diligently study full-stack software development at Floodgate Academy. My long term goal is to relocate to Africa and contribute to the efforts of uniting the continent and lifting it to heights once seen. Kids are the future. Investing my time and energy to teach them is the perfect vehicle to drive this change so for today and ever onward, I challenge myself to become as much of creative powerhouse as possible.</p>
+                  <br/>
                   <p><em>Currently based in:<em> Seattle, WA, USA</p>
               </article>
-              <article id="owl">
+              <!-- <article id="owl">
                   <h2>Creative Director</h2>
                   <p>OnlyWinnersLive</p>
-                  <p><a id="site" href="www.onlywinnerslive.com">www.onlywinnerslive.com</a></p><!--change text to website-->
-              </article>
+                  <p><a id="site" href="www.onlywinnerslive.com">www.onlywinnerslive.com</a></p>change text to website
+              </article> -->
             </div>
         </div>
 
@@ -70,7 +81,7 @@
 
         <div class="panel">
           <div class="box">
-            <section id="eductaion">
+            <section id="education">
               <h2 class="sub">Education</h2>
               <h4>Floodgate Academy</h4>
               <p>Full Stack Software Developer | Present</p>
@@ -104,12 +115,15 @@
             </section>
           </div>
         </div>
+        <a href="#main" class="jump" style="display: block; opacity: 0.7;">Top</a>
+<!--insert jquery to change display to none on load but block when scroll-->
+
 
        </div><!-- closes main -->
        <div id="side-panel" style="left: 0px">
         <header id="logo">
-          <h1><a href="#profile"><span id="name">Ewart Jackson</span></a></h1>
-          <h4> Web Developer + Designer</h4>
+          <h1 id="sub-head-1"><a href="#profile"><span id="name">Ewart Jackson</span></a></h1>
+          <h4 id="sub-head-2"> Web Developer + Designer</h4>
           <!--consider linking dev w/ a tag to your experience-->
         </header>
           <nav id="nav">
