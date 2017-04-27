@@ -4,27 +4,92 @@
         <meta charset="utf-8">
         <title>Ewart Jackson</title>
         <link rel="stylesheet" type="text/css"     href="css/main.css">
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="jquery-ui.css" />
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800" rel="stylesheet" type="text/css"/>
+        <!-- <link rel="stylesheet" href="jquery-ui.css" />
         <script src="jquery.js"></script>
-        <script src="jquery-ui.js"></script>
+        <script src="jquery-ui.js"></script> -->
+        <link rel="stylesheet" href="jquery-ui.css" />
+        <script      src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <script>
-          $(document).ready(function(){
-              $("#side-panel ul li a").click(){
-                
-              }
-          });
+            $(document).ready(function(){
+              $("#pic").fadeIn(2500);
 
+                        <!--   -->
 
+              $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                  event.preventDefault();
+                  var hash = this.hash;
+                    $('html, body').animate({
+                      scrollTop: $(hash).offset().top-135
+                      }, 800, function(){
+                      window.location.hash = hash;
+                      });
+                     }
+                   });
+
+                         <!--   -->
+
+                   $(window).scroll(function() {
+                     var windscroll = $(window).scrollTop();
+                    if (windscroll >= 360) {
+                      $(".jump").css('display','block');
+                      } else {
+                        $(".jump").css('display','none');
+                      }
+                    });
+
+                         <!--  -->
+
+           var aChildren = $("nav li").children();
+           var aArray = [];
+           for (var i=0; i < aChildren.length; i++) {
+               var aChild = aChildren[i];
+               var ahref = $(aChild).attr('href');
+               aArray.push(ahref);
+           }
+
+           $(window).scroll(function(){
+               var windowPos = $(window).scrollTop();
+
+               var windowHeight = $(window).height();
+
+               var docHeight = $(document).height();
+
+               for (var i=0; i < aArray.length; i++) {
+                   var theID = aArray[i];
+                   var divPos = $(theID).offset().top-150;
+
+                   var divHeight = $(theID).height();
+
+                   if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
+                       $("a[href='" + theID + "']").addClass("nav-active");
+                   } else {
+                       $("a[href='" + theID + "']").removeClass("nav-active");
+                   }
+               }
+
+               if(windowPos + windowHeight == docHeight) {
+                   if (!$("nav li:last-child a").hasClass("nav-active")) {
+                       var navActiveCurrent = $(".nav-active").attr("href");
+                       $("a[href='" + navActiveCurrent + "']").removeClass("nav-active");
+                       $("nav li:last-child a").addClass("nav-active");
+                   }
+               }
+           });
+       });
         </script>
      </head>
 
   <body>
        <div id="main">
-         <img id="pic" src="./img/ph.png" style="width:630px; height:400px;">
+         <img id="pic" src="./img/ph.png" style="width:630px; height:400px; display:none;">
         <div id="profile" class="panel">
             <div class="box">
-              <article id="bio">
+              <article  id="bio">
                   <h2 class="sub">Profile</h2>
                   <p>I was born on the island. My experience as an immigrant in the United States has been one filled with closed doors. By the time I was able to take advantage of the resources naturally available to citizens, it was time for me to seek a blue collar job and set aside any aspirations I had of chasing my dreams. The birth of my newborn daughter has rekindled the desire to build, not just a comfortable life for my family and I, but also to create a positive impact in the lives of my people. What I do from here on out, will be felt for generations to come.
                   <br/>
@@ -33,11 +98,6 @@
                   <br/>
                   <p><em>Currently based in:<em> Seattle, WA, USA</p>
               </article>
-              <!-- <article id="owl">
-                  <h2>Creative Director</h2>
-                  <p>OnlyWinnersLive</p>
-                  <p><a id="site" href="www.onlywinnerslive.com">www.onlywinnerslive.com</a></p>change text to website
-              </article> -->
             </div>
         </div>
 
@@ -45,28 +105,38 @@
           <div class="box">
             <section id="skills">
               <h2 class="sub">Skills</h2>
-              <ul>
-                 <li>Graphic Design</li>
-                 <li>HTML &amp; CSS</li>
-                 <li>Javascript &amp; JQuery</li>
-                 <li>Project Management</li>
-              </ul>
-            </section>
-          </div>
-        </div>
-
-        <div class="panel">
-           <div class="box">
-            <section id="work">
-              <h2 class="sub">Experience</h2>
-              <p>Creative Director</p>
-              <p>OnlyWinnersLive | NY, NY  | 2012 - Present
-              <p>Champion for new product development</p>
-              <p>Responsible for the design, art direction and management of all the company's product lines</p>
-              <p>Design product lines in Photoshop, Illustrator, and InDesign implemented across all social media, web and merchandising outlets</p>
-              <p>Maintain authenticity of the brand; shape and guided creative paths</p>
-              <p>Build and maintain websites and social     networking sites</p>
-              <p>Write press releases and content for websites, print and other media</p>
+                  <p>HTML5</p>
+                  <div class="bar">
+                    <div class="skills html">90%</div>
+                  </div>
+                  <p>CSS3</p>
+                  <div class="bar">
+                    <div class="skills css">90%</div>
+                  </div>
+                  <p>Javascript</p>
+                  <div class="bar">
+                    <div class="skills js">80%</div>
+                  </div>
+                  <p>JQuery</p>
+                  <div class="bar">
+                    <div class="skills jq">85%</div>
+                  </div>
+                  <p>Graphic Design</p>
+                  <div class="bar">
+                    <div class="skills gd">100%</div>
+                  </div>
+                  <p>UX Design</p>
+                  <div class="bar">
+                    <div class="skills uxd">80%</div>
+                  </div>
+                 <p>Project Management</p>
+                 <div class="bar">
+                   <div class="skills pm">80%</div>
+                 </div>
+                 <p>Version Control</p>
+                 <div class="bar">
+                   <div class="skills vc">90%</div>
+                 </div>
             </section>
           </div>
         </div>
@@ -75,6 +145,22 @@
           <div class="box">
             <section id="portfolio">
               <h2 class="sub">Portfolio</h2>
+            </section>
+          </div>
+        </div>
+
+        <div class="panel">
+           <div class="box">
+            <section id="work">
+              <h2 class="sub">Experience</h2>
+              <p style="font-weight: 600;"><strong>Creative Director &amp; Founder</strong></p>
+              <p style="font-weight: 500; margin-bottom: 20px;">OnlyWinnersLive | NY, NY  | 2012 - Present
+              <p>Champion for new product development</p>
+              <p>Responsible for the design, art direction and management of all the company's product lines</p>
+              <p>Design product lines in Photoshop, Illustrator, and InDesign implemented across all social media, web and merchandising outlets</p>
+              <p>Maintain authenticity of the brand; shape and guided creative paths</p>
+              <p>Build and maintain websites and social     networking sites</p>
+              <p>Write press releases and content for websites, print and other media</p>
             </section>
           </div>
         </div>
@@ -95,14 +181,14 @@
           <div class="box">
             <section id="training">
               <h2 class="sub">Training</h2>
-              <h4>Codecademy</h4>
-              <p>HTML, CSS &amp; Javascript</p>
               <h4>CalArts</h4>
               <p>Graphic Design Specialization</p>
               <h4>UC San Diego</h4>
               <p>Interaction Design Specialization</p>
               <h4>Lynda</h4>
               <p>Project Management Specialization</p>
+              <h4>Codecademy</h4>
+              <p>HTML, CSS &amp; Javascript</p>
             </section>
           </div>
         </div>
@@ -113,22 +199,23 @@
               <h2 class="sub">Contact<h2>
               <p><em>ewartjackson@icloud.com</em></p>
             </section>
+            <!-- link that opens mail -->
           </div>
         </div>
-        <a href="#main" class="jump" style="display: block; opacity: 0.7;">Top</a>
-<!--insert jquery to change display to none on load but block when scroll-->
+        <a href="#main" class="jump" style="display: none; opacity: 0.7;">Top</a>
+
 
 
        </div><!-- closes main -->
        <div id="side-panel" style="left: 0px">
         <header id="logo">
-          <h1 id="sub-head-1"><a href="#profile"><span id="name">Ewart Jackson</span></a></h1>
+          <h1 id="sub-head-1"><a href="#pic"><span id="name" >Ewart Jackson</span></a></h1>
           <h4 id="sub-head-2"> Web Developer + Designer</h4>
           <!--consider linking dev w/ a tag to your experience-->
         </header>
           <nav id="nav">
             <ul>
-              <li class="nav_1" style= "opacity= 0.5;"><a href="#profile">Profile
+              <li class="nav_1" style= "opacity= 0.5;"><a href="#pic">Profile
                 <span></span>
               </a></li>
               <li class="nav_2" style= "opacity= 0.5;"><a href="#skills">Skills
