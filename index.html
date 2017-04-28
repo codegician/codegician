@@ -5,17 +5,18 @@
         <title>Ewart Jackson</title>
         <link rel="stylesheet" type="text/css"     href="css/main.css">
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800" rel="stylesheet" type="text/css"/>
-        <!-- <link rel="stylesheet" href="jquery-ui.css" />
+
+        <link rel="stylesheet" href="jquery-ui.min.css" />
         <script src="jquery.js"></script>
-        <script src="jquery-ui.js"></script> -->
-        <link rel="stylesheet" href="jquery-ui.css" />
-        <script      src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-        </script>
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="jquery-ui.min.js"></script>
         <script>
             $(document).ready(function(){
               $("#pic").fadeIn(2500);
+
+                        <!--   -->
+
+                  $("#accordion").accordion({collapsible: true, active:true,animate:{duration: 2000, easing: "easeOutBack"}, event:"mouseover click", heightStyle: "content", icons:false
+                  });
 
                         <!--   -->
 
@@ -145,6 +146,40 @@
           <div class="box">
             <section id="portfolio">
               <h2 class="sub">Portfolio</h2>
+              <div id="accordion">
+                <h3>Graphic Art</h3>
+                <div>
+                  <ul>
+                    <li><img></li>
+                    <li><img></li>
+                    <li><img></li>
+                  </ul>
+                </div>
+                <h3>Branding</h3>
+                <div>
+                  <ul>
+                    <li><img></li>
+                    <li><img></li>
+                    <li><img></li>
+                  </ul>
+                </div>
+                <h3>Product Design</h3>
+                <div>
+                  <ul>
+                    <li><img></li>
+                    <li><img></li>
+                    <li><img></li>
+                  </ul>
+                </div>
+                <h3>Photography</h3>
+                <div>
+                  <ul>
+                    <li><img></li>
+                    <li><img></li>
+                    <li><img></li>
+                  </ul>
+                </div>
+              </div>
             </section>
           </div>
         </div>
