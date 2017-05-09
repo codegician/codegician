@@ -226,7 +226,7 @@
   #pic{
     margin-top: 135px;
     margin-bottom: 20px;
-    max-width: 100&;
+    max-width: 100%;
   }
   #main .panel {
     width: 100%;
@@ -387,8 +387,7 @@
   }
   html {
   	/*z-index: -1;*/
-  	background: url("../img/3.jpg") no-repeat center center;
-    background-attachment: scroll;
+  	background: url("../img/3.jpg") no-repeat center center fixed;
   	background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -396,7 +395,7 @@
 
   }
 
-  /*img {
+  img {
   	max-width: 100%;
-  }*/
+  }
 }
