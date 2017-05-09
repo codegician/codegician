@@ -13,12 +13,12 @@
             $(document).ready(function(){
               $("#pic").fadeIn(2500);
 
-                        <!--   -->
+                        /* fade in */
 
                   $("#accordion").accordion({collapsible: true, active:true,animate:{duration: 2000, easing: "easeOutBack"}, event:"mouseover click", heightStyle: "content", icons:false
                   });
 
-                        <!--   -->
+                        /* scroll to top */
 
               $("a").on('click', function(event) {
                 if (this.hash !== "") {
@@ -32,7 +32,7 @@
                      }
                    });
 
-                         <!--   -->
+                         /*  smooth scroll */
 
                    $(window).scroll(function() {
                      var windscroll = $(window).scrollTop();
@@ -43,7 +43,7 @@
                       }
                     });
 
-                         <!--  -->
+                         /*  nav active */
 
            var aChildren = $("nav li").children();
            var aArray = [];
@@ -278,7 +278,7 @@
        </div><!-- closes side-panel -->
 
        <div class="backstretch">
-         <img src="./img/2.jpg" style="width:1300px;        heigth:699px;">
+         <!-- <img src="./img/2.jpg" style="width:2100px;        heigth:750px;"> -->
        </div>
   </body>
 </html>
