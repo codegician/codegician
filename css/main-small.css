@@ -1,0 +1,23 @@
+@media (min-width: 360px) {
+  body {
+    font-size: 1.0em;
+  }
+}
+
+@media (min-width: 500px) {
+  #side-panel, #main,
+   {
+  
+    display: inline-block;
+    width: 100%;
+  }
+
+  #side-panel, #main {
+    margin: 5%;
+  }
+
+  .nav {
+    width: 64px;
+    height: 64px;
+  }
+}
