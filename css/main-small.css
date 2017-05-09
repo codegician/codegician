@@ -380,7 +380,7 @@
   	color: #FFDAB9;
   }
   html {
-  	background: url("../img/3.jpg") no-repeat center top fixed;
+  	background: url("../img/3.jpg") no-repeat center center fixed;
   	background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -388,7 +388,5 @@
 
   }
 
-  /*img {
-  	max-width: 100%;
-  }*/
+
 }
