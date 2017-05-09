@@ -1,8 +1,8 @@
-/*@media (min-width: 360px) {
+@media (min-width: 360px) {
   body {
     font-size: 1.0em;
   }
-}*/
+}
 
 @media (max-width: 879px) {
   /* http://meyerweb.com/eric/tools/css/reset/
@@ -226,7 +226,7 @@
   #pic{
     margin-top: 135px;
     margin-bottom: 20px;
-
+    max-width: 100&;
   }
   #main .panel {
     width: 100%;
@@ -384,6 +384,7 @@
   html {
   	/*z-index: -1;*/
   	background: url("../img/2.jpg") no-repeat center center fixed;
+    background-size: 100% 100%;
   	background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -394,9 +395,4 @@
   img {
   	max-width: 100%;
   }
-
-
-
-
-
 }
