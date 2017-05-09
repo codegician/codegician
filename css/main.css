@@ -138,14 +138,14 @@ a {
 	display: none;
 }
 
-#side-panel #nav #desktop li{
+#side-panel #nav ul li{
 		font-size: 13px;
 		color: #FFF;
 }
 
 
 
-#side-panel #nav #desktop li span {
+#side-panel #nav ul li span {
     width: 28px;
     margin-left: 15px;
 		padding-bottom: 2px;
@@ -153,42 +153,42 @@ a {
 		vertical-align: middle;
 }
 
-#side-panel #nav #desktop .nav_1 span {
+#side-panel #nav ul .nav_1 span {
   height: 24px;
 	background: url("../img/news.svg") right bottom no-repeat;
 }
 
-#side-panel #nav #desktop .nav_2 span {
+#side-panel #nav ul .nav_2 span {
   height: 24px;
 	background: url("../img/sound-mix.svg") right bottom no-repeat;
 }
 
-#side-panel #nav #desktop .nav_3 span {
+#side-panel #nav ul .nav_3 span {
   height: 24px;
 	background: url("../img/documents.svg") right bottom no-repeat;
 }
 
-#side-panel #nav #desktop .nav_4 span {
+#side-panel #nav ul .nav_4 span {
   height: 24px;
 	background: url("../img/back-in-time.svg") right bottom no-repeat;
 }
 
-#side-panel #nav #desktop .nav_5 span {
+#side-panel #nav ul .nav_5 span {
   height: 24px;
 	background: url("../img/laptop.svg") right bottom no-repeat;
 }
 
-#side-panel #nav #desktop .nav_6 span {
+#side-panel #nav ul .nav_6 span {
   height: 24px;
 	background: url("../img/game-controller.svg") right bottom no-repeat;
 }
 
-#side-panel #nav #desktop .nav_7 span {
+#side-panel #nav ul .nav_7 span {
   height: 24px;
 	background: url("../img/mail-with-circle.svg") right bottom no-repeat;
 }
 
-#side-panel #nav #desktop .nav_8 span {
+#side-panel #nav ul .nav_8 span {
   height: 24px;
 	background: url("../img/laptop.svg") right bottom no-repeat;
 }
@@ -270,11 +270,33 @@ text-align: left;
 		line-height: 28px;
 	}
 
+	.contact{
+		height: 200px;
+	}
+
 	#contact p {
 		text-align: center;
 		font-size: 14px;
 		letter-spacing: 2px;
 		line-height: 28px;
+	}
+
+	#main .panel .box a span{
+		margin-left: 200px;
+		width: 45px;
+		display: inline-block;
+		float: left;
+	}
+
+
+	 .linkedin span {
+	  height: 41px;
+		background: url("../img/linkedin1.svg") right bottom no-repeat;
+
+	}
+	.git span {
+	 height: 41px;
+	 background: url("../img/github1.svg") right bottom no-repeat;
 	}
 
 .bar{
@@ -298,13 +320,8 @@ text-align: left;
   font-weight: 400;
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
-/*.ui-state-default  {
-	background: black;
-.ui-accordion .ui-accordion-header-active {
-    color: #fff;
-    background: #ff4343;
-		width: 100%;
-}*/
+
+
 
 .skills{
 	text-align: right;
@@ -350,7 +367,6 @@ a.nav-active{
 	color: #FFDAB9;
 }
 html {
-	/*z-index: -1;*/
 	background: url("../img/2.jpg") no-repeat center center fixed;
 	background-size: cover;
 	-moz-background-size: cover;

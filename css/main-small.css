@@ -118,7 +118,7 @@
   #side-panel {
     width: 100%;
   	margin: auto;
-  	height: 125px;
+  	height: 128px;
     top: 0;
     right: 0;
     bottom: auto;
@@ -143,7 +143,7 @@
   }
   #sub-head-2 {
   	margin-bottom: 14px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
   }
   #side-panel #logo h4 {
   	font-size: 14px;
@@ -157,17 +157,15 @@
   }
 
   #side-panel #nav #mobile li{
-      margin: 1px;
-  		color: #FFF;
+      margin: 2px;
       display: inline-block;
   }
 
 
   #side-panel #nav #mobile li span {
-      width: 24px;
-      /*line-height: 24px;*/
+      width: 26px;
       margin-left: 3px;
-      margin-right: 1px;
+      margin-right: 4px;
       display: inline-block;
       min-width: 21px;
       min-height: 17px;
@@ -242,58 +240,81 @@
   padding: 25px 0 45px 0;
   margin-bottom: 300px;
   position: relative;
-  text-align: left;
+  text-align: center;
 
   }
 
   #bio p {
   	text-align: left;
   	font-size: 14px;
-  	letter-spacing: 2px;
+  	letter-spacing: 1px;
   	line-height: 28px;
   }
 
   #work p {
   		text-align: center;
-  		font-size: 14px;
-  		letter-spacing: 2px;
-  		line-height: 28px;
+  		font-size: 12px;
+  		letter-spacing: 1px;
+  		line-height: 24px;
   	}
 
 
   	#training h4 {
   		text-align: center;
-  		font-size: 16px;
-  		letter-spacing: 2px;
+  		font-size: 14px;
+  		letter-spacing: 1px;
   		line-height: 28px;
   	}
   	#education h4 {
   		text-align: center;
-  		font-size: 16px;
-  		letter-spacing: 2px;
+  		font-size: 14px;
+  		letter-spacing: 1px;
   		line-height: 28px;
   	}
 
   	#education p {
   		text-align: center;
-  		font-size: 14px;
-  		letter-spacing: 2px;
-  		line-height: 28px;
+  		font-size: 12px;
+  		letter-spacing: 1px;
+  		line-height: 24px;
   	}
 
   	#training p {
   		text-align: center;
-  		font-size: 14px;
-  		letter-spacing: 2px;
-  		line-height: 28px;
+  		font-size: 12px;
+  		letter-spacing: 1px;
+  		line-height: 24px;
   	}
+
+    .contact{
+      height: 200px;
+    }
 
   	#contact p {
   		text-align: center;
-  		font-size: 14px;
-  		letter-spacing: 2px;
-  		line-height: 28px;
+  		font-size: 12px;
+  		letter-spacing: 1px;
+  		line-height: 24px;
   	}
+
+    #main .panel .box a span{
+  		margin-left: 30%;
+  		width: 33px;
+  		display: inline-block;
+  		float: left;
+  	}
+
+
+  	 .linkedin span {
+  	  height: 29px;
+  		background: url("../img/linkedin1.svg") right bottom no-repeat;
+
+  	}
+  	.git span {
+  	 height: 26px;
+  	 background: url("../img/github1.svg") right bottom no-repeat;
+  	}
+
 
   .bar{
   	width: 90%;
@@ -316,13 +337,6 @@
     font-weight: 400;
   	font-family: "Open Sans", Helvetica, Arial, sans-serif;
   }
-  /*.ui-state-default  {
-  	background: black;
-  .ui-accordion .ui-accordion-header-active {
-      color: #fff;
-      background: #ff4343;
-  		width: 100%;
-  }*/
 
   .skills{
   	text-align: right;
@@ -368,7 +382,6 @@
   	color: #FFDAB9;
   }
   html {
-  	/*z-index: -1;*/
   	background: url("../img/2.jpg") no-repeat center center fixed;
   	background-size: cover;
   	-moz-background-size: cover;
