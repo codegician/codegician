@@ -272,6 +272,10 @@ text-align: left;
 
 	.contact{
 		height: 200px;
+		margin-bottom: 300px;
+		position: relative;
+		text-align: center;
+		padding: 25px 0 45px 0;
 	}
 
 	#contact p {
