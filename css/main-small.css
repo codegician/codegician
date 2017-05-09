@@ -381,6 +381,7 @@
   }
   body {
     /*width:100%;*/
+    position: absolute;
   	background: url("../img/3.jpg") no-repeat center center fixed;
   	background-size: cover;
   	-moz-background-size: cover;
