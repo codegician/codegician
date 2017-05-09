@@ -387,7 +387,8 @@
   }
   html {
   	/*z-index: -1;*/
-  	background: url("../img/2.jpg") no-repeat center center scroll;
+  	background: url("../img/3.jpg") no-repeat center center fixed;
+    background-attachment: scroll;
   	background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -395,7 +396,7 @@
 
   }
 
-  img {
+  /*img {
   	max-width: 100%;
-  }
+  }*/
 }
