@@ -118,7 +118,7 @@
   #side-panel {
     width: 100%;
   	margin: auto;
-  	height: 128px;
+  	height: 130px;
     top: 0;
     right: 0;
     bottom: auto;
@@ -222,12 +222,12 @@
     margin-top: 150px;
     margin-bottom: 0;
     max-width: 100%;
-    overflow: hidden;
-  }
+    width: 100%;
+ }
   #main .panel {
     width: 100%;
-  	margin-top: 150px;
-    padding-top: 0;
+  	margin-top: 15px;
+    padding-top: 15px;
     position: relative;
   	background: rgba(0,0,0,0.8);
   }
@@ -283,11 +283,11 @@
   	}
 
     .contact{
-      height: 250px;
+      height: 200px;
       margin-bottom: 0px;
       position: relative;
       text-align: center;
-      padding: 25px 0 45px 0;
+      padding: 25px 0 10px 0;
     }
 
   	#contact p {
@@ -319,7 +319,7 @@
   .bar{
   	width: 90%;
   	height: 30px;
-  	background-color: #000000;
+  	background-color: #424545;
   	border-radius: 3px;
   	margin-left: 2%;
   }
@@ -344,18 +344,18 @@
   	line-height: 30px;
   	border-radius: 3px;
   	margin-left: 2%inherit;;
-  	color: #000;
+  	color: #FFF;
   	font-family: "Open Sans", Helvetica, Arial, sans-serif;
   }
 
-  .html {width: 90%; background-color: #fff;}
-  .css {width: 90%; background-color: #fff;}
-  .js {width: 80%; background-color: #fff;}
-  .jq {width: 85%; background-color: #fff;}
-  .gd {width: 100%; background-color: #fff;}
-  .uxd {width: 80%; background-color: #fff;}
-  .pm {width: 80%; background-color: #fff;}
-  .vc {width: 90%; background-color: #fff;}
+  .html {width: 90%; background-color: #ff4343;}
+  .css {width: 90%; background-color: #ff4343;}
+  .js {width: 80%; background-color: #ff4343;}
+  .jq {width: 85%; background-color: #ff4343;}
+  .gd {width: 100%; background-color: #ff4343;}
+  .uxd {width: 80%; background-color: #ff4343;}
+  .pm {width: 80%; background-color: #ff4343;}
+  .vc {width: 90%; background-color: #ff4343;}
 
 
   .sub {
@@ -378,10 +378,11 @@
   	box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, .7);
   }
   a.nav-active{
-  	color: #FFDAB9;
+  	/*color: #FFDAB9;*/
+    color: #fff;
   }
   html {
-  	background: url("../img/4.jpg") no-repeat center center fixed;
+  	background: url() no-repeat center center fixed;
   	background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
