@@ -103,6 +103,10 @@ a {
 	color: inherit;
 }
 
+img {
+	max-width: 100&;
+}
+
 /*==================================
              SIDE PANEL
 ===================================*/
@@ -350,9 +354,12 @@ html {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	-webkit-background-size: cover;
+
 }
 
-
+img {
+	max-width: 100%;
+}
 /*==================================
             media queries
 ===================================*/
