@@ -1,8 +1,8 @@
-/*@media (min-width: 360px) {
+@media (min-width: 360px) {
   body {
     font-size: 1.0em;
   }
-}*/
+}
 
 @media (max-width: 879px) {
   /* http://meyerweb.com/eric/tools/css/reset/
