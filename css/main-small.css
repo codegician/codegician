@@ -1,23 +1,388 @@
-@media (min-width: 360px) {
+/*@media (min-width: 360px) {
   body {
     font-size: 1.0em;
   }
-}
+}*/
 
-@media (min-width: 500px) {
-  #side-panel, #main,
-   {
-  
-    display: inline-block;
+@media (max-width: 879px) {
+  /* http://meyerweb.com/eric/tools/css/reset/
+     v2.0 | 20110126
+     License: none (public domain)
+  */
+
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+  	margin: 0;
+  	padding: 0;
+  	border: 0;
+  	font-size: 100%;
+  	font: inherit;
+  	vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section {
+  	display: block;
+  }
+  body {
+  	line-height: 1;
+  }
+  ol, ul {
+  	list-style: none;
+  }
+  blockquote, q {
+  	quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+  	content: '';
+  	content: none;
+  }
+  table {
+  	border-collapse: collapse;
+  	border-spacing: 0;
+  }
+  /*==================================
+           UNIFORM STYLES
+  ===================================*/
+  body {
+    /*background: #000;*/
+    color: #FFF;
+    font: 12px/22px;
+    padding: 0;
+    margin: 0;
+  	line-height: 1;
+
+  }
+
+  * {
+  	box-sizing:border-box;
+  }
+
+  h1 {
+    font-size: 36px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+  	letter-spacing: 7px;
+  	line-height: 1.2em;
+  }
+  h2 {
+    font-size: 18px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+  	margin-bottom: 20px;
+  }
+
+  h4 {
+    font-size: 16px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  p {
+    font: 12px/22px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  	margin: 10px;
+  	font-weight: 300;
+  }
+  li {
+    font: 12px/22px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    margin: 20px;
+  }
+
+  a {
+  	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  	text-decoration: none;
+  	vertical-align: top;
+  	cursor: pointer;
+  	color: inherit;
+  }
+
+  /*==================================
+               SIDE PANEL
+  ===================================*/
+
+
+  #side-panel {
     width: 100%;
+  	margin: auto;
+  	height: 125px;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 1001;
+    display: block;
+    position: fixed;
+  	text-align: center;
+  	background: rgba(0,0,0,0.5);
+    padding: 1.5em;
+    float: none;
+    overflow: hidden;
+  }
+ /*#side-panel #logo{
+    width: 88%;
+		padding: 20px 6% 0 6%;
+		float: none;
+		overflow: hidden;
+ }*/
+  #sub-head-1{
+  	margin-bottom: 16px;
+    font-size: 22px;
+  }
+  #sub-head-2 {
+  	margin-bottom: 14px;
+    letter-spacing: 2px;
+  }
+  #side-panel #logo h4 {
+  	font-size: 14px;
+  	font-weight: 400;
+  	line-height: 16px;
+  	text-transform: uppercase;
   }
 
-  #side-panel, #main {
-    margin: 5%;
+   #desktop {
+    display: none;
   }
 
-  .nav {
-    width: 64px;
-    height: 64px;
+  #side-panel #nav #mobile li{
+      margin: 1px;
+  		color: #FFF;
+      display: inline-block;
   }
+
+
+  #side-panel #nav #mobile li span {
+      width: 24px;
+      /*line-height: 24px;*/
+      margin-left: 3px;
+      margin-right: 1px;
+      display: inline-block;
+      min-width: 21px;
+      min-height: 17px;
+
+  }
+
+  #side-panel #nav #mobile .nav_1 span {
+    height: 22px;
+  	background: url("../img/news.svg") right bottom no-repeat;
+  }
+
+  #side-panel #nav #mobile .nav_2 span {
+    height: 22px;
+  	background: url("../img/sound-mix.svg") right bottom no-repeat;
+  }
+
+  #side-panel #nav #mobile .nav_3 span {
+    height: 22px;
+  	background: url("../img/documents.svg") right bottom no-repeat;
+  }
+
+  #side-panel #nav #mobile .nav_4 span {
+    height: 22px;
+  	background: url("../img/back-in-time.svg") right bottom no-repeat;
+  }
+
+  #side-panel #nav #mobile .nav_5 span {
+    height: 22px;
+  	background: url("../img/laptop.svg") right bottom no-repeat;
+  }
+
+  #side-panel #nav #mobile .nav_6 span {
+    height: 22px;
+  	background: url("../img/game-controller.svg") right bottom no-repeat;
+  }
+
+  #side-panel #nav #mobile .nav_7 span {
+    height: 22px;
+  	background: url("../img/mail-with-circle.svg") right bottom no-repeat;
+  }
+
+  #side-panel #nav #mobile .nav_8 span {
+    height: 22px;
+  	background: url("../img/laptop.svg") right bottom no-repeat;
+  }
+
+  /*==================================
+                MAIN
+  ===================================*/
+  #main {
+    width: 100%;
+    display: block;
+    float: none;
+  	text-align: center;
+    padding: 3%;
+  }
+
+  #pic{
+    margin-top: 135px;
+    margin-bottom: 20px;
+
+  }
+  #main .panel {
+    width: 100%;
+  	margin-top: 30px;
+    padding-top: 30px;
+    position: relative;
+  	background: rgba(0,0,0,0.5);
+  }
+
+  .box {
+  padding: 25px 0 45px 0;
+  margin-bottom: 300px;
+  position: relative;
+  text-align: left;
+
+  }
+
+  #bio p {
+  	text-align: left;
+  	font-size: 14px;
+  	letter-spacing: 2px;
+  	line-height: 28px;
+  }
+
+  #work p {
+  		text-align: center;
+  		font-size: 14px;
+  		letter-spacing: 2px;
+  		line-height: 28px;
+  	}
+
+
+  	#training h4 {
+  		text-align: center;
+  		font-size: 16px;
+  		letter-spacing: 2px;
+  		line-height: 28px;
+  	}
+  	#education h4 {
+  		text-align: center;
+  		font-size: 16px;
+  		letter-spacing: 2px;
+  		line-height: 28px;
+  	}
+
+  	#education p {
+  		text-align: center;
+  		font-size: 14px;
+  		letter-spacing: 2px;
+  		line-height: 28px;
+  	}
+
+  	#training p {
+  		text-align: center;
+  		font-size: 14px;
+  		letter-spacing: 2px;
+  		line-height: 28px;
+  	}
+
+  	#contact p {
+  		text-align: center;
+  		font-size: 14px;
+  		letter-spacing: 2px;
+  		line-height: 28px;
+  	}
+
+  .bar{
+  	width: 90%;
+  	height: 30px;
+  	background-color: #424545;
+  	border-radius: 3px;
+  	margin-left: 2%;
+  }
+
+  #skills p {
+  	text-align: left;
+  	font-size: 15px;
+  	letter-spacing: 2px;
+  	line-height: 26px;
+  	margin-left: 2%;
+  }
+
+  #accordion {
+  	margin-left: 2%;
+    font-weight: 400;
+  	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  }
+  /*.ui-state-default  {
+  	background: black;
+  .ui-accordion .ui-accordion-header-active {
+      color: #fff;
+      background: #ff4343;
+  		width: 100%;
+  }*/
+
+  .skills{
+  	text-align: right;
+  	padding-right: 5%;
+  	line-height: 30px;
+  	border-radius: 3px;
+  	margin-left: 2%inherit;;
+  	color: #FFF;
+  	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  }
+
+  .html {width: 90%; background-color: #ff4343;}
+  .css {width: 90%; background-color: #ff4343;}
+  .js {width: 80%; background-color: #ff4343;}
+  .jq {width: 85%; background-color: #ff4343;}
+  .gd {width: 100%; background-color: #ff4343;}
+  .uxd {width: 80%; background-color: #ff4343;}
+  .pm {width: 80%; background-color: #ff4343;}
+  .vc {width: 90%; background-color: #ff4343;}
+
+
+  .sub {
+  	text-align: center;
+  	margin-bottom: 24px;
+  	margin-left: 10px;
+  	font-size: 20px;
+  	font-weight: 500;
+  }
+
+  .jump {
+  	color: #fff;
+  	padding: 10px;
+  	text-align: center;
+  	font-size: 10px;
+  	position: fixed;
+  	bottom: 30px;
+  	right: 30px;
+  	background: rgba(0,0,0,0.5) repeat;
+    text-transform: uppercase;
+  	box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, .7);
+  }
+  a.nav-active{
+  	color: #FFDAB9;
+  }
+  html {
+  	/*z-index: -1;*/
+  	background: url("../img/2.jpg") no-repeat center center fixed;
+  	background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	-webkit-background-size: cover;
+
+  }
+
+  img {
+  	max-width: 100%;
+  }
+
+
+
+
+
 }

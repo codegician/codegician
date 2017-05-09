@@ -103,13 +103,23 @@ a {
 	color: inherit;
 }
 
-img {
-	max-width: 100&;
-}
 
 /*==================================
              SIDE PANEL
 ===================================*/
+
+#side-panel {
+  width: 34%;
+	margin: 0;
+	height: 100%;
+  display: inline-block;
+  position: fixed;
+	text-align: right;
+	background: rgba(0,0,0,0.5);
+  padding: 78px 30px 0 30px;
+  float: right;
+}
+
 #sub-head-1{
 	margin-bottom: 22px;
 }
@@ -123,27 +133,19 @@ img {
 	text-transform: uppercase;
 	margin-right: 10px;
 }
-#side-panel {
-  width: 34%;
-	margin: 0;
-	height: 100%;
-  display: inline-block;
-  position: fixed;
-	text-align: right;
-	background: rgba(0,0,0,0.5);
-  padding: 78px 30px 0 30px;
-  float: right;
+
+#mobile {
+	display: none;
 }
 
-
-#side-panel #nav ul li{
+#side-panel #nav #desktop li{
 		font-size: 13px;
 		color: #FFF;
 }
 
 
 
-#side-panel #nav ul li span {
+#side-panel #nav #desktop li span {
     width: 28px;
     margin-left: 15px;
 		padding-bottom: 2px;
@@ -151,42 +153,42 @@ img {
 		vertical-align: middle;
 }
 
-#side-panel #nav ul .nav_1 span {
+#side-panel #nav #desktop .nav_1 span {
   height: 24px;
 	background: url("../img/news.svg") right bottom no-repeat;
 }
 
-#side-panel #nav ul .nav_2 span {
+#side-panel #nav #desktop .nav_2 span {
   height: 24px;
 	background: url("../img/sound-mix.svg") right bottom no-repeat;
 }
 
-#side-panel #nav ul .nav_3 span {
+#side-panel #nav #desktop .nav_3 span {
   height: 24px;
 	background: url("../img/documents.svg") right bottom no-repeat;
 }
 
-#side-panel #nav ul .nav_4 span {
+#side-panel #nav #desktop .nav_4 span {
   height: 24px;
 	background: url("../img/back-in-time.svg") right bottom no-repeat;
 }
 
-#side-panel #nav ul .nav_5 span {
+#side-panel #nav #desktop .nav_5 span {
   height: 24px;
 	background: url("../img/laptop.svg") right bottom no-repeat;
 }
 
-#side-panel #nav ul .nav_6 span {
+#side-panel #nav #desktop .nav_6 span {
   height: 24px;
 	background: url("../img/game-controller.svg") right bottom no-repeat;
 }
 
-#side-panel #nav ul .nav_7 span {
+#side-panel #nav #desktop .nav_7 span {
   height: 24px;
 	background: url("../img/mail-with-circle.svg") right bottom no-repeat;
 }
 
-#side-panel #nav ul .nav_8 span {
+#side-panel #nav #desktop .nav_8 span {
   height: 24px;
 	background: url("../img/laptop.svg") right bottom no-repeat;
 }
@@ -208,7 +210,7 @@ img {
 
 #pic{
 	margin-top: 82px;
-
+  max-width: 100%;
 }
 #main .panel {
   width: 660px;
@@ -360,6 +362,3 @@ html {
 img {
 	max-width: 100%;
 }
-/*==================================
-            media queries
-===================================*/
