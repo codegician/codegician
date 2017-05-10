@@ -108,6 +108,11 @@ a {
              SIDE PANEL
 ===================================*/
 
+#control {
+	position: absolute;
+	left: -500px;
+}
+
 #side-panel {
   width: 34%;
 	margin: 0;
@@ -118,6 +123,7 @@ a {
 	background: rgba(0,0,0,0.5);
   padding: 78px 30px 0 30px;
   float: right;
+
 }
 
 #sub-head-1{
