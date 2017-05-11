@@ -176,6 +176,7 @@ body.lb-disable-scrolling {
   font-size: 13px;
   font-weight: bold;
   line-height: 1em;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 .lb-data .lb-caption a {

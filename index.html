@@ -3,13 +3,20 @@
      <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Ewart Jackson</title>
+
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" type="text/css" media="(min-width:880px)" href="css/main.css">
         <link rel="stylesheet" media="(max-width:879px)" href="css/main-small.css">
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="jquery-ui.min.css" />
+        <link href="lightbox2-master/dist/css/lightbox.css" rel="stylesheet">
+        <!-- <link href="./masonry-docs/css/masonry-docs.css" rel="stylesheet"> -->
+
         <script src="jquery.js"></script>
         <script src="jquery-ui.min.js"></script>
+        <script src="./masonry-docs/masonry.pkgd.min.js"></script>
+        <script src="./lightbox2-master/dist/js/lightbox.min.js"></script>
         <script>
             $(document).ready(function(){
               $('#control').animate({left: 0}, 2500);
@@ -20,8 +27,10 @@
 
                         /* fade in */
 
-                  $("#accordion").accordion({collapsible: true, active:true,animate:{duration: 2000, easing: "easeOutBack"}, event:"mouseover click", heightStyle: "content", icons:false
-                  });
+                  $("#accordion").accordion({collapsible: true, active:true,animate:{duration: 2000, easing: "easeOutBack"}, event:"click", heightStyle: "content", icons:
+                    {"header": "ui-icon-triangle-1-e","activeHeader": "ui-icon-triangle-1-s"
+                  },
+                });
 
                         /* scroll to top */
 
@@ -86,7 +95,20 @@
                    }
                }
            });
+
+
         });
+                                       /* light box */
+
+        lightbox.option({
+          'resizeDuration': 700,
+          'wrapAround': true,
+          'alwaysShowNavOnTouchDevices': true,
+          'fitImagesInViewport': true,
+          'maxWidth': 1200,
+          'maxHeight': 800,
+          'imageFadeDuration': 600,
+             });
         </script>
      </head>
      <body>
@@ -152,8 +174,11 @@
                </nav>
             </div><!-- closes side-panel -->
        </div>
+
        <div id="main">
-         <img id="pic" src="./img/ph.png" style="display:none;">
+
+         <img id="pic" src="./img/pho1.png" style="display:none;">
+
         <div id="profile" class="panel">
             <div class="box">
               <article  id="bio">
@@ -215,34 +240,169 @@
               <div id="accordion">
                 <h3>Web Design</h3>
                 <div>
-                  <ul>
-                    <li><img></li>
-                    <li><img></li>
-                    <li><img></li>
+                  <ul class="grid">
+                    <li class="grid-item">
+                      <a href="">
+                        <img src="">
+                      </a>
+                      <div>
+                        <h4> OnlyWinnersLive</h4>
+                        <p></P>
+                      </div>
+                    </li>
+                    <li class="grid-item">
+                      <a href="" >
+                        <img src="">
+                      </a>
+                      <div>
+                        <h4>Ewart Jackson</h4>
+                        <p></P>
+                        </div>
+                      </li>
                   </ul>
                 </div>
                 <h3>Branding</h3>
                 <div>
-                  <ul>
-                    <li><img></li>
-                    <li><img></li>
-                    <li><img></li>
+                  <ul class="grid">
+                    <li class="grid-item">
+                      <a href="./thumbnails/6owl.jpg" data-lightbox="brand" data-title="OnlyWinnersLive&#8482; (2016)">
+                        <img src="./thumbnails/6owl1.jpg" >
+                      </a>
+                    </li>
+                    <li class="grid-item">
+                      <a href="./thumbnails/brick.jpg" data-lightbox="brand" data-title="OnlyWinnersLive&#8482; (2014)">
+                        <img src="./thumbnails/brick.jpg" >
+                      </a>
+                    </li>
+                    <li class="grid-item">
+                      <a href="./thumbnails/sigblk.jpg" data-lightbox="brand" data-title="OnlyWinnersLive&#8482; (2012)">
+                        <img src="./thumbnails/sig.jpg" >
+                      </a>
+                    </li>
+                    <li class="grid-item">
+                      <a href="./thumbnails/water.jpg" data-lightbox="brand" data-title=" OnlyWinnersLive&#8482; (2014)">
+                        <img src="./thumbnails/water.jpg" >
+                      </a>
+                    </li>
+                    <li class="grid-item">
+                      <a href="./thumbnails/pack.jpg" data-lightbox="brand" data-title="OnlyWinnersLive&#8482; x The H:owl Collective (2013)">
+                        <img src="./thumbnails/pack.jpg" >
+                      </a>
+                    </li>
+                    <li class="grid-item">
+                      <a href="./thumbnails/moon.jpg" data-lightbox="brand" data-title="Rich &amp; Tailored (2016)">
+                        <img src="./thumbnails/moon.jpg" >
+                      </a>
+                    </li>
+                    <li class="grid-item">
+                      <a href="./thumbnails/swank.jpg" data-lightbox="brand" data-title="Swank (2015)">
+                        <img src="./thumbnails/swank.jpg" >
+                      </a>
+                    </li>
+                    <li class="grid-item">
+                      <a href="./thumbnails/richt.jpg" data-lightbox="brand" data-title="Rich &amp; Tailored (2016)">
+                        <img src="./thumbnails/richt.jpg" >
+                      </a>
+                    </li>
+                    <li class="grid-item">
+                      <a href="./thumbnails/afrolistic.jpg" data-lightbox="brand" data-title="Afrolistic (2016)">
+                        <img src="./thumbnails/afrolistic.jpg" >
+                      </a></li>
+                    <li class="grid-item">
+                      <a href="./thumbnails/branding.jpg" data-lightbox="brand" data-title="OnlyWinnersLive&#8482; (2014)">
+                        <img src="./thumbnails/branding.jpg" >
+                      </a>
+                    </li>
                   </ul>
                 </div>
                 <h3>Product Design</h3>
                 <div>
-                  <ul>
-                    <li><img></li>
-                    <li><img></li>
-                    <li><img></li>
+                  <ul class="grid">
+                    <li class="grid-item">
+                      <a href="./thumbnails/bloss.jpg" data-lightbox="Product-Design" data-title="OnlyWinnersLive&#8482; x The H:owl Collective T Shirt (2013)">
+                        <img src="./thumbnails/bloss.jpg">
+                      </a>
+                    </li>
+                    <li class="grid-item">
+                      <a href="./thumbnails/lsd.jpg" data-lightbox="Product-Design" data-title="OnlyWinnersLive&#8482; x The H:owl Collective L/S Shirt (2014)">
+                        <img src="./thumbnails/lsd.jpg">
+                      </a>
+                    </li>
+                    <li class="grid-item">
+                      <a href="./thumbnails/dark.jpg" data-lightbox="Product-Design" data-title="OnlyWinnersLive&#8482; Hooded Sweatshirt (2014)">
+                        <img src="./thumbnails/dark.jpg">
+                      </a>
+                    </li>
+                    <li class="grid-item">
+                      <a href="./thumbnails/howlhood.jpg" data-lightbox="Product-Design" data-title="OnlyWinnersLive&#8482; x The H:owl Collective Hooded Sweatshirt (2014)">
+                        <img src="./thumbnails/howlhood.jpg">
+                      </a>
+                    </li>
+                    <li class="grid-item">
+                      <a href="./thumbnails/jacket.jpg" data-lightbox="Product-Design" data-title="OnlyWinnersLive&#8482; Varsity Jacket Illustration (2013)">
+                        <img src="./thumbnails/jacket.jpg">
+                      </a>
+                    </li>
+                    <li class="grid-item">
+                      <a href="./thumbnails/coach.jpg" data-lightbox="Product-Design" data-title="OnlyWinnersLive&#8482; Coach Jacket (2015)">
+                        <img src="./thumbnails/coach.jpg">
+                      </a>
+                    </li>
+                    <li class="grid-item">
+                      <a href="./thumbnails/port.jpg" data-lightbox="Product-Design" data-title="OnlyWinnersLive&#8482; Poster">
+                        <img src="./thumbnails/port.jpg">
+                      </a>
+                    </li>
+                    <li class="grid-item">
+                      <a href="./thumbnails/pop.jpg" data-lightbox="Product-Design" data-title="OnlyWinnersLive&#8482; Winter Hat (2015)">
+                        <img src="./thumbnails/pop.jpg">
+                      </a>
+                    </li>
+                    <li class="grid-item">
+                      <a href="./thumbnails/sampflat.jpg" data-lightbox="Product-Design" data-title="OnlyWinnersLive&#8482; Winter Hat Illustration">
+                        <img src="./thumbnails/sampflat.jpg">
+                      </a>
+                    </li>
+                    <li class="grid-item">
+                      <a href="./thumbnails/cups.gif" data-lightbox="Product-Design" data-title="Afrolistic Cups (2016)">
+                        <img src="./thumbnails/cups.gif">
+                      </a>
+                    </li>
                   </ul>
                 </div>
                 <h3>Visual Art</h3>
                 <div>
-                  <ul>
-                    <li><img></li>
-                    <li><img></li>
-                    <li><img></li>
+                  <ul class="grid">
+                    <li class="grid-item">
+                      <a href="./thumbnails/pp1.jpg" data-lightbox="vis-art" data-title="">
+                        <img src="./thumbnails/pp1.jpg">
+                      </a>
+                    </li>
+                    <li class="grid-item">
+                      <a href="./thumbnails/pp2.jpg" data-lightbox="vis-art" data-title="Essence">
+                        <img src="./thumbnails/pp2.jpg">
+                      </a>
+                    </li>
+                    <li class="grid-item">
+                      <a href="./thumbnails/cage.jpg" data-lightbox="vis-art" data-title="Cage Free Egg">
+                        <img src="./thumbnails/cage.jpg">
+                      </a>
+                    </li>
+                    <li class="grid-item">
+                      <a href="./thumbnails/heart.jpg" data-lightbox="vis-art" data-title="Egg">
+                        <img src="./thumbnails/heart.jpg">
+                      </a>
+                    </li>
+                    <li class="grid-item">
+                      <a href="./thumbnails/aasb.jpg" data-lightbox="vis-art" data-title="Native Son">
+                        <img src="./thumbnails/aasb.jpg">
+                      </a>
+                    </li>
+                    <li class="grid-item">
+                      <a href="./thumbnails/woke.jpg" data-lightbox="vis-art" data-title="Awakening">
+                        <img src="./thumbnails/woke.jpg">
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -303,6 +463,7 @@
             </section>
           </div>
         </div>
+
         <a href="#main" class="jump" style="display: none; opacity: 0.7;">Top</a>
 
 

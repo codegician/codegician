@@ -912,8 +912,8 @@ html.export {
 
 
 body {
-  color: #333;
-  background: #D8D5D2;
+  /*color: #333;*/
+  /*background: #D8D5D2;*/
 }
 
 body, input, button {
@@ -924,13 +924,13 @@ body, input, button {
 
 a,
 a code {
-  color: #A2C;
+  /*color: #A2C;*/
   text-decoration: none;
 }
 
 a:hover,
 a:hover code {
-  color: #D26;
+  /*color: #D26;*/
 }
 
 
@@ -994,13 +994,14 @@ pre code {
 }
 
 a code {
-  background: #A2C;
+  /*background: #A2C;*/
   color: white;
 }
 
 a:hover code {
   color: white;
-  background: #D26;
+
+
 }
 
 code .string,
@@ -1571,7 +1572,7 @@ code .masonry_keyword { color: #0FF; text-decoration: underline; }
 }
 
 @media screen and ( min-width: 1100px ) {
-  
+
   .container {
     margin-left: 6%;
     margin-right: 200px;

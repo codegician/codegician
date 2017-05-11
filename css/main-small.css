@@ -332,6 +332,11 @@
   	line-height: 26px;
   	margin-left: 2%;
   }
+  
+  #portfolio ul li {
+  	width: 40%;
+  	float: left;
+  }
 
   #accordion {
   	margin-left: 2%;

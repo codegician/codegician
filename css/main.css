@@ -221,7 +221,7 @@ a {
 #main .panel {
   width: 660px;
 	margin-top: 30px;
-  padding: 0 30px 0 0;
+  padding: 0 30px;
   position: relative;
 	background: rgba(0,0,0,0.5);
 }
@@ -247,7 +247,6 @@ text-align: left;
 		letter-spacing: 2px;
 		line-height: 28px;
 	}
-
 
 	#training h4 {
 		text-align: center;
@@ -323,6 +322,11 @@ text-align: left;
 	letter-spacing: 2px;
 	line-height: 26px;
 	margin-left: 2%;
+}
+
+#portfolio ul li {
+	width: 40%;
+	float: left;
 }
 
 #accordion {
