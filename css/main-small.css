@@ -78,7 +78,7 @@
   	line-height: 1.2em;
   }
   h2 {
-    font-size: 18px;
+    font-size: 22px;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
   	margin-bottom: 20px;
@@ -384,7 +384,7 @@
 
 
     html {
-  	background: url("../img/7.jpg") no-repeat center center fixed;
+  	background: url("../img/8.jpg") no-repeat center center fixed;
   	background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
