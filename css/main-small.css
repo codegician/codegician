@@ -332,14 +332,38 @@
   	line-height: 26px;
   	margin-left: 2%;
   }
-  
-  #portfolio ul li {
-  	width: 40%;
-  	float: left;
+
+  #portfolio h4  {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 28px;
+  }
+  #portfolio h3  {
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    padding-right: 25px;
+  }
+  #portfolio {
+    padding: 0;
+
   }
 
+  #portfolio ul li {
+  	/*width: 20%;*/
+    margin: 20px 0 20px 150px;
+  }
+
+  #portfolio ul li a img {
+	width: 250px;
+  display: block;
+}
+
+
   #accordion {
-  	margin-left: 2%;
+
     font-weight: 400;
   	font-family: "Open Sans", Helvetica, Arial, sans-serif;
   }
