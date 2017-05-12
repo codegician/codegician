@@ -351,14 +351,19 @@
 
   }
 
+  .flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
   #portfolio ul li {
-  	/*width: 20%;*/
-    margin: 20px 0 20px 150px;
+    margin: 5% 0;
   }
 
   #portfolio ul li a img {
 	width: 250px;
-  display: block;
 }
 
 

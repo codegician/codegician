@@ -227,6 +227,7 @@ a {
 }
 
 .box {
+max-width: 100%;
 padding: 50px 0 70px 0;
 margin-bottom: 350px;
 position: relative;
@@ -380,8 +381,6 @@ text-align: left;
 a.nav-active{
 	color: #FFDAB9;
 }
-
-
 
 html {
 	background: url("../img/2.jpg") no-repeat center center fixed;
