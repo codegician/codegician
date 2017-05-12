@@ -330,6 +330,22 @@ text-align: left;
 	float: left;
 }
 
+.info {
+	width: 200px;
+	/*margin-left: 20%;*/
+	text-transform: none;
+}
+
+.info h4 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.info p {
+ text-align: left;
+ margin-left: 0;
+}
+
 #accordion {
 	margin-left: 2%;
   font-weight: 400;
