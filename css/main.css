@@ -309,20 +309,13 @@ text-align: left;
 	 background: url("../img/github1.svg") right bottom no-repeat;
 	}
 
-.bar{
-	width: 90%;
-	height: 30px;
-	background-color: #424545;
-	border-radius: 3px;
-	margin-left: 2%;
-}
-
 #skills p {
 	text-align: left;
 	font-size: 15px;
 	letter-spacing: 2px;
 	line-height: 26px;
 	margin-left: 2%;
+	font-weight: 500;
 }
 
 #portfolio ul li {
@@ -352,9 +345,15 @@ text-align: left;
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-
-
 .skills{
+	width: 90%;
+	height: 30px;
+	background-color: #424545;
+	border-radius: 3px;
+	margin-left: 2%;
+}
+
+.bar{
 	text-align: right;
 	padding-right: 5%;
 	line-height: 30px;
@@ -362,16 +361,9 @@ text-align: left;
 	margin-left: 2%inherit;;
 	color: #FFF;
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	width: 0%;
 }
-
-.html {width: 90%; background-color: #ff4343;}
-.css {width: 90%; background-color: #ff4343;}
-.js {width: 80%; background-color: #ff4343;}
-.jq {width: 85%; background-color: #ff4343;}
-.gd {width: 100%; background-color: #ff4343;}
-.uxd {width: 80%; background-color: #ff4343;}
-.pm {width: 80%; background-color: #ff4343;}
-.vc {width: 90%; background-color: #ff4343;}
 
 
 .sub {

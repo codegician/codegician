@@ -100,9 +100,24 @@
                }
            });
 
+                                  /* skills bar */
 
+                        var skillsDiv = $('#skills');
+
+                        $(window).on('scroll', function() {
+                        var winT = $(window).scrollTop(),
+                          winH = $(window).height(),
+                          skillsT = skillsDiv.offset().top;
+                        if (winT + winH > skillsT) {
+                          $('.skills').each(function(){
+                        		$(this).find('.bar').animate({
+                        			width:$(this).attr('data-percent')
+                        		},3900);
+                        	});
+                        }
+                        });
         });
-                                       /* light box */
+
         </script>
      </head>
      <body>
@@ -192,36 +207,36 @@
             <section id="skills">
               <h2 class="sub">Skills</h2>
                   <p>HTML5</p>
-                  <div class="bar">
-                    <div class="skills html">90%</div>
+                  <div class="skills" data-percent="90%" >
+                    <div class="bar" style="background-color:#ff4343">90%</div>
                   </div>
                   <p>CSS3</p>
-                  <div class="bar">
-                    <div class="skills css">90%</div>
+                  <div class="skills" data-percent="90%">
+                    <div class="bar" style="background-color:#ff4343">90%</div>
                   </div>
                   <p>Javascript</p>
-                  <div class="bar">
-                    <div class="skills js">80%</div>
+                  <div class="skills" data-percent="80%">
+                    <div class="bar" style="background-color:#ff4343">80%</div>
                   </div>
                   <p>JQuery</p>
-                  <div class="bar">
-                    <div class="skills jq">85%</div>
+                  <div class="skills" data-percent="85%">
+                    <div class="bar" style="background-color:#ff4343">85%</div>
                   </div>
                   <p>Visual Design</p>
-                  <div class="bar">
-                    <div class="skills gd">100%</div>
+                  <div class="skills" data-percent="100%">
+                    <div class="bar" style="background-color:#ff4343">100%</div>
                   </div>
                   <p>Interaction Design</p>
-                  <div class="bar">
-                    <div class="skills uxd">80%</div>
+                  <div class="skills" data-percent="80%">
+                    <div class="bar" style="background-color:#ff4343">80%</div>
                   </div>
                  <p>Project Management</p>
-                 <div class="bar">
-                   <div class="skills pm">80%</div>
+                 <div class="skills" data-percent="80%">
+                   <div class="bar" style="background-color:#ff4343">80%</div>
                  </div>
                  <p>Version Control</p>
-                 <div class="bar">
-                   <div class="skills vc">90%</div>
+                 <div class="skills" data-percent="90%">
+                   <div class="bar" style="background-color:#ff4343">90%</div>
                  </div>
             </section>
           </div>
@@ -467,15 +482,15 @@
 
        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
        <script>
-       lightbox.option({
-         'resizeDuration': 700,
-         'wrapAround': true,
-         'alwaysShowNavOnTouchDevices': true,
-         'fitImagesInViewport': true,
-         'maxWidth': 1200,
-         'maxHeight': 800,
-         'imageFadeDuration': 600,
-            });
+         lightbox.option({
+           'resizeDuration': 700,
+           'wrapAround': true,
+           'alwaysShowNavOnTouchDevices': true,
+           'fitImagesInViewport': true,
+           'maxWidth': 1200,
+           'maxHeight': 800,
+           'imageFadeDuration': 600,
+              });
         </script>
 
     </body>
