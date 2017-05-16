@@ -229,7 +229,7 @@ a {
 .box {
 max-width: 100%;
 padding: 50px 0 70px 0;
-margin-bottom: 350px;
+margin-bottom: 10px;
 position: relative;
 text-align: left;
 
@@ -238,14 +238,14 @@ text-align: left;
 #bio p {
 	text-align: left;
 	font-size: 14px;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	line-height: 28px;
 }
 
 #work p {
 		text-align: justify;
 		font-size: 14px;
-		letter-spacing: 2px;
+		letter-spacing: 1px;
 		line-height: 28px;
 	}
 
@@ -337,6 +337,7 @@ text-align: left;
 .info p {
  text-align: left;
  margin-left: 0;
+ font-size: 12px;
 }
 
 #accordion {
