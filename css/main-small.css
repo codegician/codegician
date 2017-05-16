@@ -365,6 +365,7 @@
  .info p {
    text-align: left;
    margin-left: 0;
+   font-size: 14px;
  }
 
   #portfolio ul li {
