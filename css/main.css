@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -191,16 +193,8 @@ a {
 
 #side-panel #nav ul .nav_7 span {
   height: 24px;
-	background: url("../img/mail-with-circle.svg") right bottom no-repeat;
+	background: url("../img/chat.svg") right bottom no-repeat;
 }
-
-#side-panel #nav ul .nav_8 span {
-  height: 24px;
-	background: url("../img/laptop.svg") right bottom no-repeat;
-}
-
-
-
 
 
 /*==================================
@@ -292,12 +286,16 @@ text-align: left;
 	}
 
 	#main .panel .box a span{
-		margin-left: 33.333%;
+		margin-left: 20%;
 		width: 45px;
 		display: inline-block;
 		float: left;
 	}
 
+	.email span {
+	 height: 41px;
+	 background: url("../img/mail-with-circle.svg") right bottom no-repeat;
+ }
 
 	 .linkedin span {
 	  height: 41px;

@@ -7,109 +7,11 @@
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" type="text/css" media="(min-width:880px)" href="css/main.css">
         <link rel="stylesheet" media="(max-width:879px)" href="css/main-small.css">
-        <link rel="stylesheet" href="js/jquery-ui.min.css" />
+        <link rel="stylesheet" href="js/jquery-ui.min.css"/>
         <link href="lightbox2-master/dist/css/lightbox.css" rel="stylesheet">
         <script src="js/jquery.js"></script>
         <script src="js/jquery-ui.min.js"></script>
         <script src="./lightbox2-master/dist/js/lightbox.min.js"></script>
-        <script>
-            $(document).ready(function(){
-              $('#control').animate({left: 0}, 2500);
-
-                        /* slide in */
-
-              $("#pic").fadeIn(2500);
-
-                        /* fade in */
-
-                  $("#accordion").accordion({collapsible: true, active:true,animate:{duration: 2000, easing: "easeOutBack"}, event:"click", heightStyle: "content", icons:
-                    {"header": "ui-icon-triangle-1-e","activeHeader": "ui-icon-triangle-1-s"
-                  },
-                });
-
-                        /* scroll to top */
-
-              $("a").on('click', function(event) {
-                if (this.hash !== "") {
-                  event.preventDefault();
-                  var hash = this.hash;
-                    $('html, body').animate({
-                      scrollTop: $(hash).offset().top-135
-                      }, 800, function(){
-                      window.location.hash = hash;
-                      });
-                     }
-                   });
-
-                         /*  smooth scroll */
-
-                   $(window).scroll(function() {
-                     var windscroll = $(window).scrollTop();
-                    if (windscroll >= 360) {
-                      $(".jump").css('display','block');
-                      } else {
-                        $(".jump").css('display','none');
-                      }
-                    });
-
-                         /*  nav active */
-
-           var aChildren = $("nav li").children();
-           var aArray = [];
-           for (var i=0; i < aChildren.length; i++) {
-               var aChild = aChildren[i];
-               var ahref = $(aChild).attr('href');
-               aArray.push(ahref);
-           }
-
-           $(window).scroll(function(){
-               var windowPos = $(window).scrollTop();
-
-               var windowHeight = $(window).height();
-
-               var docHeight = $(document).height();
-
-               for (var i=0; i < aArray.length; i++) {
-                   var theID = aArray[i];
-                   var divPos = $(theID).offset().top-150;
-
-                   var divHeight = $(theID).height();
-
-                   if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
-                       $("a[href='" + theID + "']").addClass("nav-active");
-                   } else {
-                       $("a[href='" + theID + "']").removeClass("nav-active");
-                   }
-               }
-
-               if(windowPos + windowHeight == docHeight) {
-                   if (!$("nav li:last-child a").hasClass("nav-active")) {
-                       var navActiveCurrent = $(".nav-active").attr("href");
-                       $("a[href='" + navActiveCurrent + "']").removeClass("nav-active");
-                       $("nav li:last-child a").addClass("nav-active");
-                   }
-               }
-           });
-
-                                  /* skills bar */
-
-                        var skillsDiv = $('#skills');
-
-                        $(window).on('scroll', function() {
-                        var winT = $(window).scrollTop(),
-                          winH = $(window).height(),
-                          skillsT = skillsDiv.offset().top;
-                        if (winT + winH > skillsT) {
-                          $('.skills').each(function(){
-                        		$(this).find('.bar').animate({
-                        			width:$(this).attr('data-percent')
-                        		},3900);
-                        	});
-                        }
-                        });
-        });
-
-        </script>
      </head>
      <body>
        <div id="control">
@@ -117,7 +19,6 @@
              <header id="logo">
                <h1 id="sub-head-1"><a href="https://codegician.github.io/"><span id="name" >Ewart Jackson</span></a></h1>
                <h4 id="sub-head-2"> Web Developer + Designer</h4>
-               <!--consider linking dev w/ a tag to your experience-->
              </header>
                <nav id="nav">
                  <ul id="desktop">
@@ -143,9 +44,7 @@
                    <li class="nav_7" style= "opacity= 0.5;"><a href="#contact">Contact
                      <span></span>
                    </a></li>
-                   <!-- <li class="nav_7" style= "opacity= 0.5;"><a href="#store">Store<span></span></a></li> -->
                  </ul>
-
                  <ul id="mobile">
                      <li class="nav_1" style= "opacity= 0.5;"><a href="#pic">
                        <span></span>
@@ -169,16 +68,12 @@
                      <li class="nav_7" style= "opacity= 0.5;"><a href="#contact">
                        <span></span>
                      </a></li>
-                     <!-- <li class="nav_7" style= "opacity= 0.5;"><a href="#store">Store<span></span></a></li> -->
                    </ul>
                </nav>
             </div><!-- closes side-panel -->
        </div>
-
        <div id="main">
-
          <img id="pic" src="./img/pho1.png" style="display:none;">
-
         <div id="profile" class="panel">
             <div class="box">
               <article  id="bio">
@@ -192,7 +87,6 @@
               </article>
             </div>
         </div>
-
         <div class="panel">
           <div class="box">
             <section id="skills">
@@ -232,7 +126,6 @@
             </section>
           </div>
         </div>
-
         <div class="panel">
           <div class="box">
             <section id="portfolio">
@@ -410,7 +303,6 @@
             </section>
           </div>
         </div>
-
         <div class="panel">
            <div class="box">
             <section id="work">
@@ -426,7 +318,6 @@
             </section>
           </div>
         </div>
-
         <div class="panel">
           <div class="box">
             <section id="education">
@@ -438,7 +329,6 @@
             </section>
           </div>
         </div>
-
         <div class="panel">
           <div class="box">
             <section id="training">
@@ -454,35 +344,20 @@
             </section>
           </div>
         </div>
-
         <div class="panel contact">
           <div class="box">
             <section id="contact">
               <h2 class="sub">Contact</h2>
+              <a class="email" href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x65;&#x77;&#x61;&#x72;&#x74;&#x6a;&#x61;&#x63;&#x6b;&#x73;&#x6f;&#x6e;&#x40;&#x69;&#x63;&#x6c;&#x6f;&#x75;&#x64;&#x2e;&#x63;&#x6f;&#x6d;"><span></span>
               <a class="linkedin" href="https://www.linkedin.com/in/ewwjackson" target="blank"><span></span>
               <a  class="git" href="https://github.com/codegician" target="blank"><span></span>
             </section>
           </div>
         </div>
-
         <a href="#main" class="jump" style="display: none; opacity: 0.7;">Top</a>
-
-
        </div><!-- closes main -->
-
-
        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-       <script>
-         lightbox.option({
-           'resizeDuration': 700,
-           'wrapAround': true,
-           'alwaysShowNavOnTouchDevices': true,
-           'fitImagesInViewport': true,
-           'maxWidth': 1200,
-           'maxHeight': 800,
-           'imageFadeDuration': 600,
-              });
-        </script>
+        <script src="js/dom.js"></script>
 
     </body>
 </html>
