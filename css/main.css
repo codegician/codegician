@@ -400,3 +400,22 @@ html {
 img {
 	max-width: 100%;
 }
+
+/*===========================================
+                  new features
+===========================================*/
+
+#tech-used {
+    visibility: hidden;
+    width: 120px;
+    color: #fff;
+    text-align: left;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+
+.info:hover #tech-used {
+    visibility: visible;
+}
