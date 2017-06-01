@@ -427,12 +427,7 @@
 
 
     html {
-  	background: url("../img/8.jpg");
-  	background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	-webkit-background-size: cover;
-
+  	background-color: coral;
   }
 
   img {
