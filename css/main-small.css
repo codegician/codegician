@@ -432,4 +432,8 @@
 
   img {
   	max-width: 100%;
-}
+  }
+
+  #tech-used {
+    visibility: hidden;
+  }
