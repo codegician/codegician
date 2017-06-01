@@ -106,21 +106,4 @@ $(window).scroll(function(){
                });
 
 
-                  /* contact */
-
-            function check_empty() {
-            if (document.getElementById('user').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
-            alert("Fill All Fields !");
-            } else {
-            document.getElementById('form').submit();
-            alert("Form Submitted Successfully...");
-            }
-            }
-
-            function div_show() {
-            document.getElementById('contact-form').style.display = "block";
-            }
-
-            function div_hide(){
-            document.getElementById('contact-form').style.display = "none";
-            }
+      

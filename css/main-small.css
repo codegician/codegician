@@ -212,7 +212,6 @@
     display: block;
     float: none;
   	text-align: center;
-    padding: ;
   }
 
   #pic{
@@ -301,20 +300,13 @@
   		float: left;
   	}
 
-    .email span {
-     height: 33px;
-     background: url("../img/mail-with-circle.svg") right bottom no-repeat;
-   }
-
-  	 .linkedin span {
-  	  height: 33px;
-  		background: url("../img/linkedin1.svg") right bottom no-repeat;
-
-  	}
-  	.git span {
-  	 height: 33px;
-  	 background: url("../img/github1.svg") right bottom no-repeat;
-  	}
+    .skills{
+    	width: 90%;
+    	height: 30px;
+    	background-color: #424545;
+    	border-radius: 3px;
+    	margin-left: 2%;
+    }
 
 
   #skills p {
@@ -383,14 +375,6 @@
   	font-family: "Open Sans", Helvetica, Arial, sans-serif;
   }
 
-  .skills{
-  	width: 90%;
-  	height: 30px;
-  	background-color: #424545;
-  	border-radius: 3px;
-  	margin-left: 2%;
-  }
-
   .bar{
   	text-align: right;
   	padding-right: 5%;
@@ -409,6 +393,21 @@
   	font-weight: 500;
   }
 
+  .email span {
+   height: 33px;
+   background: url("../img/mail-with-circle.svg") right bottom no-repeat;
+ }
+
+   .linkedin span {
+    height: 33px;
+    background: url("../img/linkedin1.svg") right bottom no-repeat;
+
+  }
+  .git span {
+   height: 33px;
+   background: url("../img/github1.svg") right bottom no-repeat;
+  }
+
   .jump {
   	color: #fff;
   	padding: 10px;
@@ -422,9 +421,7 @@
   	box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, .7);
   }
 
-  a.nav-active{
-    color: #fff;
-  }
+
 
     html {
   	background-color: #FF5C5C;
