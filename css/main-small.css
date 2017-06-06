@@ -245,7 +245,7 @@
 
   #work p {
   		text-align: left;
-  		font-size: 12px;
+  		font-size: 13px;
   		letter-spacing: 1px;
   		line-height: 24px;
   	}
@@ -253,27 +253,27 @@
 
   	#training h4 {
   		text-align: center;
-  		font-size: 13px;
+  		font-size: 14px;
   		letter-spacing: 1px;
   		line-height: 28px;
   	}
   	#education h4 {
   		text-align: center;
-  		font-size: 13px;
+  		font-size: 14px;
   		letter-spacing: 1px;
   		line-height: 28px;
   	}
 
   	#education p {
   		text-align: center;
-  		font-size: 12px;
+  		font-size: 13px;
   		letter-spacing: 1px;
   		line-height: 24px;
   	}
 
   	#training p {
   		text-align: center;
-  		font-size: 12px;
+  		font-size: 13px;
   		letter-spacing: 1px;
   		line-height: 24px;
   	}
@@ -288,7 +288,7 @@
 
   	#contact p {
   		text-align: center;
-  		font-size: 12px;
+  		font-size: 14px;
   		letter-spacing: 1px;
   		line-height: 24px;
   	}
@@ -311,7 +311,7 @@
 
   #skills p {
   	text-align: left;
-  	font-size: 12px;
+  	font-size: 13px;
   	letter-spacing: 2px;
   	line-height: 26px;
   	margin-left: 2%;
@@ -320,13 +320,13 @@
 
   #portfolio h4  {
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1px;
     line-height: 28px;
   }
   #portfolio h3  {
     text-align: center;
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: 1px;
     line-height: 28px;
     padding-right: 25px;
@@ -357,7 +357,7 @@
  .info p {
    text-align: left;
    margin-left: 0;
-   font-size: 12px;
+   font-size: 14px;
  }
 
   #portfolio ul li {
@@ -423,7 +423,7 @@
 
 
 
-    html {
+  html {
   	background-color: #FF5C5C;
   }
 
@@ -431,8 +431,9 @@
   	max-width: 100%;
   }
 
-  #tech-used {
+  /*#features {
     display: none;
-  }
+
+  }*/
 
 }

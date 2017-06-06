@@ -402,10 +402,9 @@ img {
 }
 
 /*===========================================
-                  new features
+                  experimental features
 ===========================================*/
-
-#tech-used {
+/*#features {
     visibility: hidden;
     width: 120px;
     color: #fff;
@@ -416,6 +415,6 @@ img {
     z-index: 1;
 }
 
-.info:hover #tech-used {
+.info:hover #features{
     visibility: visible;
-}
+}*/
