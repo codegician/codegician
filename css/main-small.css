@@ -238,7 +238,7 @@
 
   #bio p {
   	text-align: left;
-  	font-size: 14px;
+  	font-size: 12px;
   	letter-spacing: 1px;
   	line-height: 28px;
   }
@@ -253,13 +253,13 @@
 
   	#training h4 {
   		text-align: center;
-  		font-size: 14px;
+  		font-size: 13px;
   		letter-spacing: 1px;
   		line-height: 28px;
   	}
   	#education h4 {
   		text-align: center;
-  		font-size: 14px;
+  		font-size: 13px;
   		letter-spacing: 1px;
   		line-height: 28px;
   	}
@@ -311,7 +311,7 @@
 
   #skills p {
   	text-align: left;
-  	font-size: 15px;
+  	font-size: 12px;
   	letter-spacing: 2px;
   	line-height: 26px;
   	margin-left: 2%;
@@ -320,13 +320,13 @@
 
   #portfolio h4  {
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 1px;
     line-height: 28px;
   }
   #portfolio h3  {
     text-align: center;
-    font-size: 13px;
+    font-size: 11px;
     letter-spacing: 1px;
     line-height: 28px;
     padding-right: 25px;
@@ -357,7 +357,7 @@
  .info p {
    text-align: left;
    margin-left: 0;
-   font-size: 14px;
+   font-size: 12px;
  }
 
   #portfolio ul li {
@@ -434,3 +434,5 @@
   #tech-used {
     display: none;
   }
+
+}
