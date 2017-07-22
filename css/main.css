@@ -214,7 +214,7 @@ a {
 }
 #main .panel {
   width: 660px;
-	margin-top: 30px;
+	margin-top: 85px;
   padding: 0 30px;
   position: relative;
 	background: rgba(0,0,0,0.5);
@@ -390,7 +390,7 @@ a.nav-active{
 }
 
 html {
-	background: url("../img/2.jpg") no-repeat center center fixed;
+	background: url("../img/5.jpg") no-repeat center center fixed;
 	background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;

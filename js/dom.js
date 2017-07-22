@@ -2,9 +2,8 @@ $('#control').animate({left: 0}, 2500);
 
           /* slide in */
 
-$("#pic").fadeIn(2500);
 
-          /* fade in */
+
 
     $("#accordion").accordion({collapsible: true, active:true,animate:{duration: 2000, easing: "easeOutBack"}, event:"click", heightStyle: "content", icons:
       {"header": "ui-icon-triangle-1-e","activeHeader": "ui-icon-triangle-1-s"
@@ -79,7 +78,7 @@ $(window).scroll(function(){
 
           var skillsDiv = $('#skills');
 
-          $(window).on('scroll', function() {
+          $(window).on('load', function() {
           var winT = $(window).scrollTop(),
             winH = $(window).height(),
             skillsT = skillsDiv.offset().top;
@@ -104,6 +103,3 @@ $(window).scroll(function(){
             'maxHeight': 800,
             'imageFadeDuration': 600,
                });
-
-
-      
